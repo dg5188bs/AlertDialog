@@ -9,10 +9,43 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity {
-    AlertDialog.Builder abd1,abd2,abd3,abd4,abd5;
+    /**
+     * The Abd 1.
+     */
+    AlertDialog.Builder abd1, /**
+     * The Abd 2.
+     */
+    abd2, /**
+     * The Abd 3.
+     */
+    abd3, /**
+     * The Abd 4.
+     */
+    abd4, /**
+     * The Abd 5.
+     */
+    abd5;
+    /**
+     * The Linear layout.
+     */
     LinearLayout linearLayout;
-    int red,green,blue;
+    /**
+     * The Red.
+     */
+    int red, /**
+     * The Green.
+     */
+    green, /**
+     * The Blue.
+     */
+    blue;
+    /**
+     * The Rnd.
+     */
     Random rnd;
 
     @Override
@@ -28,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
         linearLayout = (LinearLayout) findViewById(R.id.bc);
     }
 
+    /**
+     * First.
+     *
+     * @param view the view
+     */
     public void first(View view) {
         abd1.setTitle("Congratulations!");
         abd1.setMessage("You have successfully pressed the button");
@@ -35,6 +73,11 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
+    /**
+     * Second.
+     *
+     * @param view the view
+     */
     public void second(View view) {
         abd2.setTitle("Congratulations!");
         abd2.setMessage("You have successfully pressed the button");
@@ -43,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
+    /**
+     * Third.
+     *
+     * @param view the view
+     */
     public void Third(View view) {
         abd3.setTitle("Congratulations!");
         abd3.setMessage("You can close this one");
@@ -57,6 +105,11 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
+    /**
+     * Fourth.
+     *
+     * @param view the view
+     */
     public void Fourth(View view) {
         abd4.setTitle("Congratulations!");
         abd4.setMessage("You can choose random colors now!");
@@ -79,6 +132,11 @@ public class MainActivity extends AppCompatActivity {
         ad.show();
     }
 
+    /**
+     * Fifth.
+     *
+     * @param view the view
+     */
     public void fifth(View view) {
         System.out.println("orly");
         abd5.setTitle("Congratulations!");
