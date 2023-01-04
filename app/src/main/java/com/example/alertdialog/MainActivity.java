@@ -16,20 +16,27 @@ import android.widget.LinearLayout;
  * The type Main activity.
  */
 public class MainActivity extends AppCompatActivity {
+    /**
+     * The Gi.
+     */
     Intent gi;
     /**
      * The Abd 1.
      */
-    AlertDialog.Builder abd1, /**
+    AlertDialog.Builder abd1,
+    /**
      * The Abd 2.
      */
-    abd2, /**
+    abd2,
+    /**
      * The Abd 3.
      */
-    abd3, /**
+    abd3,
+    /**
      * The Abd 4.
      */
-    abd4, /**
+    abd4,
+    /**
      * The Abd 5.
      */
     abd5;
@@ -40,10 +47,12 @@ public class MainActivity extends AppCompatActivity {
     /**
      * The Red.
      */
-    int red, /**
+    int red,
+    /**
      * The Green.
      */
-    green, /**
+    green,
+    /**
      * The Blue.
      */
     blue;
