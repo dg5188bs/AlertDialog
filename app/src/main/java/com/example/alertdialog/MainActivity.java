@@ -4,8 +4,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Random;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -13,6 +16,7 @@ import android.widget.LinearLayout;
  * The type Main activity.
  */
 public class MainActivity extends AppCompatActivity {
+    Intent gi;
     /**
      * The Abd 1.
      */
@@ -58,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         abd4 = new AlertDialog.Builder(this);
         abd5 = new AlertDialog.Builder(this);
         rnd = new Random();
+        gi = new Intent(this,MainActivity2.class);
         linearLayout = (LinearLayout) findViewById(R.id.bc);
     }
 
@@ -80,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void second(View view) {
         abd2.setTitle("Congratulations!");
-        abd2.setMessage("You have successfully pressed the button");
+        abd2.setMessage("This one includes a picture");
         abd2.setIcon(R.drawable.good);
         AlertDialog ad = abd2.create();
         ad.show();
@@ -164,5 +169,17 @@ public class MainActivity extends AppCompatActivity {
         });
         AlertDialog ad = abd5.create();
         ad.show();
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        String st = item.getTitle().toString();
+        if(st.equals("credits")){
+            startActivity(gi);
+        }
+        return true;
     }
 }
